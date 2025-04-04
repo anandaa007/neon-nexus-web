@@ -2,7 +2,7 @@
 import React from 'react';
 import { 
   Brain, 
-  VrHeadset, 
+  Headset, 
   Shield, 
   Cpu, 
   Workflow, 
@@ -38,7 +38,7 @@ const trackData = [
   {
     title: "Extended Reality",
     description: "Design immersive VR/AR experiences that blur the lines between physical and digital realities.",
-    icon: <VrHeadset size={32} className="text-neon-blue" />,
+    icon: <Headset size={32} className="text-neon-blue" />,
     color: "border-neon-blue hover:border-neon-blue neon-blue"
   },
   {
