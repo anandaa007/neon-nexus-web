@@ -48,7 +48,7 @@ const Index = () => {
             <div className="glass-panel rounded-lg p-8 border border-neon-blue border-opacity-30">
               <p className="text-lg text-gray-300 mb-6">
                 NeoNexus is not just a hackathon—it's a journey into the future of technology. 
-                For 36 adrenaline-fueled hours spanning September 6-10, 2025, participants from around the globe converge to 
+                For 36 adrenaline-fueled hours spanning September 6-7, 2025, participants from around the globe converge to 
                 ideate, innovate, and create solutions that push the boundaries of what's possible.
               </p>
               
@@ -99,7 +99,7 @@ const Index = () => {
             <div className="h-16 flex items-center justify-center overflow-hidden border border-neon-cyan border-opacity-40 rounded-lg bg-black bg-opacity-30">
               <div className="animate-[slide_20s_linear_infinite] whitespace-nowrap">
                 <span className="inline-block px-8 font-orbitron text-neon-cyan">
-                  NEONEXUS HACKATHON REGISTRATION OPENING SOON • SEPTEMBER 6-10, 2025 • 36 HOURS OF CODING • $50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS • GLOBAL COMMUNITY OF INNOVATORS •
+                  NEONEXUS HACKATHON REGISTRATION OPENING SOON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING • $50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS • GLOBAL COMMUNITY OF INNOVATORS •
                 </span>
               </div>
             </div>

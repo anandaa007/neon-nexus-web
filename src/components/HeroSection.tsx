@@ -54,7 +54,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">
-            Bridging reality and digital frontiers. Join us on September 6-10, 2025 for a 
+            Bridging reality and digital frontiers. Join us on September 6-7, 2025 for a 
             36-hour hackathon where innovation meets the future.
           </p>
           

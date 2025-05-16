@@ -64,7 +64,7 @@ const DayTabs: React.FC<{ activeDay: number; setActiveDay: (day: number) => void
   activeDay, 
   setActiveDay 
 }) => {
-  const days = ["DAY 1 (SEP 6)", "DAY 2 (SEP 10)"];
+  const days = ["DAY 1 (SEP 6)", "DAY 2 (SEP 7)"];
   
   return (
     <div className="flex justify-center mb-12">
@@ -136,7 +136,7 @@ const scheduleData = [
       location: "Lounge Zone"
     }
   ],
-  // Day 2 - September 10th
+  // Day 2 - September 7th
   [
     {
       time: "08:00 - 09:00",
@@ -197,7 +197,7 @@ const ScheduleSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-orbitron font-bold mb-6 neon-text neon-cyan">EVENT SCHEDULE</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            September 6 & 10, 2025: Two days of innovation, collaboration, and technological advancement.
+            September 6 & 7, 2025: Two days of innovation, collaboration, and technological advancement.
             Our 36-hour hackathon is packed with exciting activities and challenges.
           </p>
         </div>
