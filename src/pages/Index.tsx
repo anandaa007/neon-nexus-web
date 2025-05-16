@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection';
 import TracksSection from '@/components/TracksSection';
@@ -7,7 +7,6 @@ import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
-import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Index = () => {
   // Smooth scroll behavior
@@ -29,22 +28,6 @@ const Index = () => {
 
     document.addEventListener('click', handleAnchorClick);
     return () => document.removeEventListener('click', handleAnchorClick);
-  }, []);
-
-  const [scrollIndex, setScrollIndex] = useState(0);
-  const liveUpdates = [
-    "REGISTRATION OPENING SOON! STAY TUNED FOR UPDATES",
-    "NEONEXUS HACKATHON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING",
-    "$50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS",
-    "JOIN THE GLOBAL COMMUNITY OF INNOVATORS • BE PART OF THE FUTURE"
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScrollIndex((prev) => (prev + 1) % liveUpdates.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -99,42 +82,6 @@ const Index = () => {
       <TracksSection />
       <ScheduleSection />
       <SpeakersSection />
-      
-      {/* Live Updates Section */}
-      <section className="relative py-16 bg-cyber-medium">
-        <div className="absolute inset-0 bg-cyber-grid bg-[size:40px_40px] opacity-10"></div>
-        
-        <div className="cyber-container">
-          <div className="max-w-5xl mx-auto glass-panel rounded-lg p-8 border border-neon-cyan border-opacity-30">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-4xl font-orbitron font-bold mb-4 neon-text neon-cyan">LIVE UPDATES</h2>
-              <p className="text-gray-300">
-                Real-time announcements and important information will appear here during the event.
-              </p>
-            </div>
-            
-            <div className="overflow-hidden border border-neon-cyan border-opacity-40 rounded-lg bg-black bg-opacity-30">
-              <div className="relative h-16">
-                {liveUpdates.map((update, index) => (
-                  <div 
-                    key={index}
-                    className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ${
-                      index === scrollIndex ? "opacity-100" : "opacity-0"
-                    }`}
-                  >
-                    <div className="text-center px-4 w-full">
-                      <p className="font-orbitron text-neon-cyan truncate">
-                        {update}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       <FaqSection />
       <Footer />
     </div>

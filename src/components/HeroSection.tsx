@@ -14,6 +14,15 @@ const HeroSection = () => {
     seconds: 0
   });
 
+  // Live Updates state
+  const [scrollIndex, setScrollIndex] = useState(0);
+  const liveUpdates = [
+    "REGISTRATION OPENING SOON! STAY TUNED FOR UPDATES",
+    "NEONEXUS HACKATHON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING",
+    "$50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS",
+    "JOIN THE GLOBAL COMMUNITY OF INNOVATORS • BE PART OF THE FUTURE"
+  ];
+
   useEffect(() => {
     const calculateTimeLeft = () => {
       const difference = +hackathonDate - +new Date();
@@ -33,6 +42,15 @@ const HeroSection = () => {
 
     return () => clearInterval(timer);
   }, [hackathonDate]);
+
+  // Live Updates effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScrollIndex((prev) => (prev + 1) % liveUpdates.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const timeBlocks = [
     { label: 'DAYS', value: timeLeft.days },
@@ -72,7 +90,7 @@ const HeroSection = () => {
             </a>
           </div>
           
-          <div className="glass-panel rounded-xl p-6 max-w-3xl mx-auto">
+          <div className="glass-panel rounded-xl p-6 max-w-3xl mx-auto mb-8">
             <div className="flex items-center justify-center mb-4 gap-2">
               <Clock className="text-neon-cyan" />
               <h3 className="text-xl font-orbitron text-gray-200">HACKATHON COUNTDOWN</h3>
@@ -92,6 +110,32 @@ const HeroSection = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+          
+          {/* Live Updates Section - Now right after the countdown */}
+          <div className="max-w-3xl mx-auto glass-panel rounded-lg p-4 border border-neon-cyan border-opacity-30">
+            <div className="flex items-center justify-center mb-2 gap-2">
+              <h3 className="text-lg font-orbitron text-neon-cyan">LIVE UPDATES</h3>
+            </div>
+            
+            <div className="overflow-hidden border border-neon-cyan border-opacity-40 rounded-lg bg-black bg-opacity-30">
+              <div className="relative h-12">
+                {liveUpdates.map((update, index) => (
+                  <div 
+                    key={index}
+                    className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ${
+                      index === scrollIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    <div className="text-center px-4 w-full">
+                      <p className="font-orbitron text-neon-cyan truncate">
+                        {update}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
