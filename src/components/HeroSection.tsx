@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import { Clock } from 'lucide-react';
 
 const HeroSection = () => {
-  // Set hackathon date to 3 months from now
-  const hackathonDate = new Date();
-  hackathonDate.setMonth(hackathonDate.getMonth() + 3);
+  // Set hackathon date to September 6, 2025
+  const hackathonDate = new Date('2025-09-06T09:00:00');
   
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -55,14 +54,14 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">
-            Bridging reality and digital frontiers. Join the next generation hackathon 
-            where innovation meets the future.
+            Bridging reality and digital frontiers. Join us on September 6-10, 2025 for a 
+            36-hour hackathon where innovation meets the future.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Link to="/register" className="neon-button text-lg">
-              Register Now
-            </Link>
+            <button className="neon-button text-lg opacity-80 cursor-not-allowed">
+              Registration Opening Soon
+            </button>
             <a 
               href="#about" 
               className="px-8 py-3 text-lg font-orbitron font-semibold tracking-wider text-white 

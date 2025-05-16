@@ -64,7 +64,7 @@ const DayTabs: React.FC<{ activeDay: number; setActiveDay: (day: number) => void
   activeDay, 
   setActiveDay 
 }) => {
-  const days = ["DAY 1", "DAY 2", "DAY 3"];
+  const days = ["DAY 1 (SEP 6)", "DAY 2 (SEP 10)"];
   
   return (
     <div className="flex justify-center mb-12">
@@ -89,7 +89,7 @@ const DayTabs: React.FC<{ activeDay: number; setActiveDay: (day: number) => void
 };
 
 const scheduleData = [
-  // Day 1
+  // Day 1 - September 6th
   [
     {
       time: "09:00 - 10:00",
@@ -136,64 +136,36 @@ const scheduleData = [
       location: "Lounge Zone"
     }
   ],
-  // Day 2
+  // Day 2 - September 10th
   [
     {
       time: "08:00 - 09:00",
       title: "Breakfast",
-      description: "Start your day with a hearty breakfast to fuel your coding marathon.",
+      description: "Final day breakfast to fuel your coding sprint.",
       location: "Cyber Canteen"
     },
     {
       time: "10:00 - 11:00",
       title: "Mentor Sessions",
-      description: "One-on-one mentoring with industry experts to refine your projects.",
+      description: "Last chance for one-on-one mentoring with industry experts.",
       location: "Mentoring Booths"
     },
     {
       time: "13:00 - 14:00",
-      title: "Technical Workshop: Quantum Computing",
-      description: "Learn the basics of quantum algorithms and how to implement them.",
-      location: "Workshop Pod B",
-      isKeyEvent: true
-    },
-    {
-      time: "16:00 - 17:00",
-      title: "Mid-point Check-in",
-      description: "Progress showcase and feedback from mentors and judges.",
-      location: "Main Stage"
-    },
-    {
-      time: "20:00 - 21:00",
-      title: "Energizer: VR Gaming Tournament",
-      description: "Take a break with some competitive VR gaming to recharge your creative batteries.",
-      location: "VR Zone"
-    }
-  ],
-  // Day 3
-  [
-    {
-      time: "08:00 - 09:00",
-      title: "Final Breakfast",
-      description: "Last meal before the final sprint to project completion.",
-      location: "Cyber Canteen"
-    },
-    {
-      time: "12:00 - 13:00",
       title: "Hacking Ends",
       description: "Put the final touches on your projects. Coding period officially ends.",
       location: "All Venues",
       isKeyEvent: true
     },
     {
-      time: "13:00 - 15:00",
+      time: "14:00 - 16:00",
       title: "Project Presentations",
       description: "Teams present their innovations to judges and fellow participants.",
       location: "Nexus Auditorium",
       isKeyEvent: true
     },
     {
-      time: "15:00 - 16:00",
+      time: "16:00 - 17:00",
       title: "Judges Deliberation",
       description: "Judges evaluate projects while participants network and relax.",
       location: "Restricted Area"
@@ -225,8 +197,8 @@ const ScheduleSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-orbitron font-bold mb-6 neon-text neon-cyan">EVENT SCHEDULE</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Three days of innovation, collaboration, and technological advancement.
-            Don't miss out on any of the exciting activities we have planned.
+            September 6 & 10, 2025: Two days of innovation, collaboration, and technological advancement.
+            Our 36-hour hackathon is packed with exciting activities and challenges.
           </p>
         </div>
         
