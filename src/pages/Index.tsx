@@ -122,12 +122,10 @@ const Index = () => {
                       index === scrollIndex ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    <div className="overflow-x-hidden w-full">
-                      <div className="animate-[slide_20s_linear_infinite] whitespace-nowrap">
-                        <span className="inline-block px-8 font-orbitron text-neon-cyan">
-                          {update} • {update} • {update} •
-                        </span>
-                      </div>
+                    <div className="text-center px-4 w-full">
+                      <p className="font-orbitron text-neon-cyan truncate">
+                        {update}
+                      </p>
                     </div>
                   </div>
                 ))}
