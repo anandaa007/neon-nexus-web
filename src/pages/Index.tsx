@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection';
 import TracksSection from '@/components/TracksSection';
@@ -7,6 +7,7 @@ import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Index = () => {
   // Smooth scroll behavior
@@ -28,6 +29,22 @@ const Index = () => {
 
     document.addEventListener('click', handleAnchorClick);
     return () => document.removeEventListener('click', handleAnchorClick);
+  }, []);
+
+  const [scrollIndex, setScrollIndex] = useState(0);
+  const liveUpdates = [
+    "REGISTRATION OPENING SOON! STAY TUNED FOR UPDATES",
+    "NEONEXUS HACKATHON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING",
+    "$50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS",
+    "JOIN THE GLOBAL COMMUNITY OF INNOVATORS • BE PART OF THE FUTURE"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScrollIndex((prev) => (prev + 1) % liveUpdates.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -96,11 +113,24 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="h-16 flex items-center justify-center overflow-hidden border border-neon-cyan border-opacity-40 rounded-lg bg-black bg-opacity-30">
-              <div className="animate-[slide_20s_linear_infinite] whitespace-nowrap">
-                <span className="inline-block px-8 font-orbitron text-neon-cyan">
-                  NEONEXUS HACKATHON REGISTRATION OPENING SOON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING • $50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS • GLOBAL COMMUNITY OF INNOVATORS •
-                </span>
+            <div className="overflow-hidden border border-neon-cyan border-opacity-40 rounded-lg bg-black bg-opacity-30">
+              <div className="relative h-16">
+                {liveUpdates.map((update, index) => (
+                  <div 
+                    key={index}
+                    className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ${
+                      index === scrollIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-x-hidden w-full">
+                      <div className="animate-[slide_20s_linear_infinite] whitespace-nowrap">
+                        <span className="inline-block px-8 font-orbitron text-neon-cyan">
+                          {update} • {update} • {update} •
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
