@@ -2,10 +2,10 @@
 import React from 'react';
 import { 
   Brain, 
-  Headset, 
+  FileCode,
   Shield, 
+  Car, 
   Cpu, 
-  Workflow, 
   Bot,
   FileText,
   Briefcase
@@ -39,44 +39,44 @@ const TrackCard: React.FC<TrackCardProps> = ({ title, description, icon, color, 
 const trackData = [
   // Software Tracks
   {
-    title: "Artificial Intelligence",
+    title: "AI & Machine Learning",
     description: "Craft cutting-edge AI solutions that solve real-world problems through deep learning and cognitive computing.",
     icon: <Brain size={32} className="text-neon-violet" />,
     color: "border-neon-violet hover:border-neon-violet neon-violet",
     category: "Software"
   },
   {
-    title: "Blockchain",
-    description: "Develop decentralized applications and smart contracts that redefine digital trust and ownership.",
-    icon: <Workflow size={32} className="text-neon-pink" />,
+    title: "Cybersecurity",
+    description: "Build robust security solutions to protect digital assets in an increasingly vulnerable cyber landscape.",
+    icon: <Shield size={32} className="text-neon-pink" />,
     color: "border-neon-pink hover:border-neon-pink neon-pink",
     category: "Software"
   },
   {
-    title: "Cybersecurity",
-    description: "Build robust security solutions to protect digital assets in an increasingly vulnerable cyber landscape.",
-    icon: <Shield size={32} className="text-neon-green" />,
+    title: "Product-Building / App Dev",
+    description: "Create innovative applications and products that solve real-world problems and enhance user experiences.",
+    icon: <FileCode size={32} className="text-neon-green" />,
     color: "border-neon-green hover:border-neon-green neon-green",
     category: "Software"
   },
   
   // Hardware Tracks
   {
-    title: "Quantum Computing",
-    description: "Explore the frontiers of quantum algorithms and applications that transcend classical computing limits.",
-    icon: <Cpu size={32} className="text-neon-cyan" />,
+    title: "Mobility",
+    description: "Develop innovative transportation and mobility solutions that redefine how we move in the physical world.",
+    icon: <Car size={32} className="text-neon-cyan" />,
     color: "border-neon-cyan hover:border-neon-cyan neon-cyan",
     category: "Hardware"
   },
   {
-    title: "Extended Reality",
-    description: "Design immersive VR/AR experiences with custom hardware that blur the lines between physical and digital realities.",
-    icon: <Headset size={32} className="text-neon-blue" />,
+    title: "Embedded Systems & IoT",
+    description: "Design connected devices and systems that bridge the physical and digital worlds through smart technology.",
+    icon: <Cpu size={32} className="text-neon-blue" />,
     color: "border-neon-blue hover:border-neon-blue neon-blue",
     category: "Hardware"
   },
   {
-    title: "Robotic Automation",
+    title: "Robotics Automation",
     description: "Create intelligent robotic systems and physical prototypes that enhance human capabilities and automate complex tasks.",
     icon: <Bot size={32} className="text-neon-violet" />,
     color: "border-neon-violet hover:border-neon-violet neon-violet",

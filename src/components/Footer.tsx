@@ -2,13 +2,14 @@
 import React from 'react';
 import { 
   Github, 
-  Twitter, 
+  Facebook,
   Linkedin, 
   Instagram, 
   Mail, 
   MapPin, 
   Phone, 
-  ArrowRight 
+  ArrowRight,
+  Youtube
 } from 'lucide-react';
 
 const Footer = () => {
@@ -31,16 +32,19 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
-                <Twitter size={16} />
+                <Facebook size={16} />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
+                <Instagram size={16} />
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
                 <Linkedin size={16} />
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
-                <Github size={16} />
+                <Youtube size={16} />
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
-                <Instagram size={16} />
+                <Github size={16} />
               </a>
             </div>
           </div>
@@ -67,21 +71,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#speakers" className="text-gray-400 hover:text-neon-violet transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" />
-                  Speakers
-                </a>
-              </li>
-              <li>
                 <a href="#faq" className="text-gray-400 hover:text-neon-violet transition-colors flex items-center">
                   <ArrowRight size={14} className="mr-2" />
                   FAQ
-                </a>
-              </li>
-              <li>
-                <a href="/register" className="text-gray-400 hover:text-neon-violet transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" />
-                  Register
                 </a>
               </li>
             </ul>
@@ -92,7 +84,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start text-gray-400">
                 <MapPin size={18} className="mr-2 mt-1 text-neon-violet" />
-                <span>TechHub Innovation Center<br />123 Digital Avenue<br />Cyber City, CC 10101</span>
+                <span>Ballari Institute of Technology & Management<br />"Jnana Gangotri" Campus, Hospet Rd<br />near Allipura, Ballari, 583104</span>
               </li>
               <li className="flex items-center text-gray-400">
                 <Phone size={18} className="mr-2 text-neon-violet" />
@@ -123,9 +115,12 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-500 text-sm">
+        <div className="border-t border-gray-800 pt-8">
+          <p className="text-gray-500 text-sm text-center mb-4">
             © {new Date().getFullYear()} NeoNexus Hackathon. All rights reserved.
+          </p>
+          <p className="text-gray-500 text-sm text-center">
+            Designed and developed by A Ananda Dept. of EEE and Aaftabzohara Dept. of AIML
           </p>
         </div>
       </div>

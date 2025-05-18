@@ -4,7 +4,6 @@ import NavBar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection';
 import TracksSection from '@/components/TracksSection';
 import ScheduleSection from '@/components/ScheduleSection';
-import SpeakersSection from '@/components/SpeakersSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
 
@@ -52,12 +51,7 @@ const Index = () => {
                 ideate, innovate, and create solutions that push the boundaries of what's possible.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <div className="bg-cyber-medium bg-opacity-30 p-6 rounded-lg border-l-4 border-neon-violet">
-                  <h3 className="font-orbitron font-bold text-xl mb-2">Registration</h3>
-                  <p className="text-gray-400">Opening soon - stay tuned for announcements</p>
-                </div>
-                
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">                
                 <div className="bg-cyber-medium bg-opacity-30 p-6 rounded-lg border-l-4 border-neon-cyan">
                   <h3 className="font-orbitron font-bold text-xl mb-2">2</h3>
                   <p className="text-gray-400">Categories: Software and Hardware</p>
@@ -81,7 +75,6 @@ const Index = () => {
       
       <TracksSection />
       <ScheduleSection />
-      <SpeakersSection />
       <FaqSection />
       <Footer />
     </div>

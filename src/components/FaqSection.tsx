@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, MessageSquare, Info } from 'lucide-react';
+import { ChevronDown, ChevronUp, MessageSquare } from 'lucide-react';
 
 interface FaqItemProps {
   question: string;
@@ -40,7 +40,7 @@ const faqData = [
   },
   {
     question: "Do I need to have a team before registering?",
-    answer: "No, you can register individually and form a team during the event. We'll have a dedicated team formation session where you can meet potential teammates. Teams can have up to 4 members."
+    answer: "You cannot participate individually. Each team must consist of 3-4 members. You can register with your existing team or form a team during the team formation session at the event."
   },
   {
     question: "What should I bring to the hackathon?",
@@ -109,17 +109,6 @@ const FaqSection = () => {
               Contact Support
             </a>
           </div>
-        </div>
-        
-        {/* Developer Information */}
-        <div className="text-center mt-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Info size={18} className="text-gray-400" />
-            <h4 className="text-gray-400 font-orbitron">DEVELOPER INFORMATION</h4>
-          </div>
-          <p className="text-gray-500">
-            Designed and developed by A Ananda Dept. of EEE and Aaftabzohara Dept. of AIML
-          </p>
         </div>
       </div>
     </section>
