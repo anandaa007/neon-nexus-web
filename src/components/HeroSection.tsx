@@ -70,7 +70,7 @@ const HeroSection = () => {
             <img 
               src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
               alt="NeoNexus Logo" 
-              className="h-20 w-auto"
+              className="h-28 w-auto" // Increased from h-20 to h-28
             />
           </div>
           

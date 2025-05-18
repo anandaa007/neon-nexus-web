@@ -22,7 +22,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
                 alt="NeoNexus Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto" // Increased from h-12 to h-16
               />
             </div>
             <p className="text-gray-400 mb-6">

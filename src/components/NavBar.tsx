@@ -22,7 +22,7 @@ const NavBar = () => {
             <img 
               src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
               alt="NeoNexus Logo" 
-              className="h-10 w-auto"
+              className="h-14 w-auto" // Increased from h-10 to h-14
             />
             <h1 className="text-2xl font-orbitron font-bold tracking-wider text-white neon-text neon-violet">
               NEONEXUS
