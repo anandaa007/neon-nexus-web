@@ -48,24 +48,24 @@ const Index = () => {
             <div className="glass-panel rounded-lg p-8 border border-neon-blue border-opacity-30">
               <p className="text-lg text-gray-300 mb-6">
                 NeoNexus is not just a hackathon—it's a journey into the future of technology. 
-                For 36 adrenaline-fueled hours spanning September 6-7, 2025, participants from around the globe converge to 
+                For 36 adrenaline-fueled hours spanning September 6-7, 2025, participants from around the globe will converge to 
                 ideate, innovate, and create solutions that push the boundaries of what's possible.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 <div className="bg-cyber-medium bg-opacity-30 p-6 rounded-lg border-l-4 border-neon-violet">
-                  <h3 className="font-orbitron font-bold text-xl mb-2">500+</h3>
-                  <p className="text-gray-400">Passionate participants from around the world</p>
+                  <h3 className="font-orbitron font-bold text-xl mb-2">Registration</h3>
+                  <p className="text-gray-400">Opening soon - stay tuned for announcements</p>
                 </div>
                 
                 <div className="bg-cyber-medium bg-opacity-30 p-6 rounded-lg border-l-4 border-neon-cyan">
-                  <h3 className="font-orbitron font-bold text-xl mb-2">6</h3>
-                  <p className="text-gray-400">Cutting-edge technology tracks to explore</p>
+                  <h3 className="font-orbitron font-bold text-xl mb-2">2</h3>
+                  <p className="text-gray-400">Categories: Software and Hardware</p>
                 </div>
                 
                 <div className="bg-cyber-medium bg-opacity-30 p-6 rounded-lg border-l-4 border-neon-pink">
                   <h3 className="font-orbitron font-bold text-xl mb-2">$50K+</h3>
-                  <p className="text-gray-400">In prizes, funding opportunities, and resources</p>
+                  <p className="text-gray-400">In prizes, separate awards for both categories</p>
                 </div>
               </div>
               

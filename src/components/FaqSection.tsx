@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, MessageSquare } from 'lucide-react';
+import { ChevronDown, ChevronUp, MessageSquare, Info } from 'lucide-react';
 
 interface FaqItemProps {
   question: string;
@@ -36,15 +36,11 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer, isOpen, toggleOpen 
 const faqData = [
   {
     question: "What is NeoNexus Hackathon?",
-    answer: "NeoNexus is a cutting-edge hackathon that brings together tech enthusiasts, innovators, and problem solvers to develop solutions in fields like AI, blockchain, XR, and more. Participants work in teams to build functional prototypes over a 3-day period."
+    answer: "NeoNexus is a cutting-edge hackathon that brings together tech enthusiasts, innovators, and problem solvers to develop solutions in fields like AI, blockchain, XR, and more. Participants work in teams to build functional prototypes over a 36-hour period with separate tracks for software and hardware categories."
   },
   {
     question: "Do I need to have a team before registering?",
     answer: "No, you can register individually and form a team during the event. We'll have a dedicated team formation session where you can meet potential teammates. Teams can have up to 4 members."
-  },
-  {
-    question: "Is there an entry fee for the hackathon?",
-    answer: "NeoNexus Hackathon is completely free for all participants. We believe in removing barriers to innovation and providing an inclusive environment for everyone."
   },
   {
     question: "What should I bring to the hackathon?",
@@ -52,7 +48,7 @@ const faqData = [
   },
   {
     question: "Are there prizes for the winners?",
-    answer: "Yes! The total prize pool is over $50,000, including cash prizes, high-tech gadgets, cloud credits, and opportunities for funding or incubation for exceptional projects."
+    answer: "Yes! The total prize pool is over $50,000, with separate prizes for software and hardware categories, including cash prizes, high-tech gadgets, cloud credits, and opportunities for funding or incubation for exceptional projects."
   },
   {
     question: "Can I work on a pre-existing project?",
@@ -113,6 +109,17 @@ const FaqSection = () => {
               Contact Support
             </a>
           </div>
+        </div>
+        
+        {/* Developer Information */}
+        <div className="text-center mt-16">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Info size={18} className="text-gray-400" />
+            <h4 className="text-gray-400 font-orbitron">DEVELOPER INFORMATION</h4>
+          </div>
+          <p className="text-gray-500">
+            Designed and developed by A Ananda Dept. of EEE and Aaftabzohara Dept. of AIML
+          </p>
         </div>
       </div>
     </section>
