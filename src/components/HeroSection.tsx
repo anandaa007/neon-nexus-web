@@ -19,8 +19,8 @@ const HeroSection = () => {
   const liveUpdates = [
     "REGISTRATION OPENING SOON! STAY TUNED FOR UPDATES",
     "NEONEXUS HACKATHON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING",
-    "$50,000+ IN PRIZES • 6 CUTTING-EDGE TRACKS • WORLD-CLASS SPEAKERS",
-    "JOIN THE GLOBAL COMMUNITY OF INNOVATORS • BE PART OF THE FUTURE"
+    "NATIONAL LEVEL EVENT • $50,000+ IN PRIZES • SEPARATE AWARDS FOR HARDWARE & SOFTWARE",
+    "BRINGING TOGETHER THE BEST INNOVATORS FROM ACROSS THE COUNTRY"
   ];
 
   useEffect(() => {
@@ -66,6 +66,14 @@ const HeroSection = () => {
       
       <div className="cyber-container relative z-10 flex flex-col items-center justify-center min-h-[90vh] py-10">
         <div className="text-center max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
+              alt="NeoNexus Logo" 
+              className="h-20 w-auto"
+            />
+          </div>
+          
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-orbitron font-bold mb-6 animate-float">
             <span className="neon-text neon-violet">NEO</span>
             <span className="neon-text neon-cyan">NEXUS</span>

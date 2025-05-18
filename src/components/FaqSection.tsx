@@ -105,7 +105,7 @@ const FaqSection = () => {
             <p className="text-gray-400 mb-6">
               Our team is ready to help you with any additional questions or concerns.
             </p>
-            <a href="mailto:support@neonexus.tech" className="neon-button">
+            <a href="mailto:abdulbitm@ieee.org" className="neon-button">
               Contact Support
             </a>
           </div>

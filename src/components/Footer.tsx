@@ -19,12 +19,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-neon-violet animate-pulse-neon neon-violet flex items-center justify-center">
-                <span className="text-white font-orbitron font-bold text-xl">N</span>
-              </div>
-              <h3 className="text-2xl font-orbitron font-bold tracking-wider text-white neon-text neon-violet">
-                NEONEXUS
-              </h3>
+              <img 
+                src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
+                alt="NeoNexus Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-6">
               Bridging reality and digital frontiers. Join the next generation hackathon 
@@ -42,9 +41,6 @@ const Footer = () => {
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
                 <Youtube size={16} />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-cyber-medium flex items-center justify-center text-gray-400 hover:text-neon-violet transition-colors">
-                <Github size={16} />
               </a>
             </div>
           </div>
@@ -88,19 +84,19 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-gray-400">
                 <Phone size={18} className="mr-2 text-neon-violet" />
-                <span>+1 (888) NEO-NEXS</span>
+                <span>+91 9738973034</span>
               </li>
               <li className="flex items-center text-gray-400">
                 <Mail size={18} className="mr-2 text-neon-violet" />
-                <span>info@neonexus.tech</span>
+                <span>abdulbitm@ieee.org</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-orbitron font-bold mb-6 text-white">Subscribe</h4>
+            <h4 className="text-lg font-orbitron font-bold mb-6 text-white">Any Questions?</h4>
             <p className="text-gray-400 mb-4">
-              Get the latest updates and announcements about NeoNexus Hackathon.
+              For any queries, email us directly. Our team is ready to assist you.
             </p>
             <div className="flex">
               <input

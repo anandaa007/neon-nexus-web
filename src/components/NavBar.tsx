@@ -19,9 +19,11 @@ const NavBar = () => {
       <div className="cyber-container py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-neon-violet animate-pulse-neon neon-violet flex items-center justify-center">
-              <span className="text-white font-orbitron font-bold text-xl">N</span>
-            </div>
+            <img 
+              src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
+              alt="NeoNexus Logo" 
+              className="h-10 w-auto"
+            />
             <h1 className="text-2xl font-orbitron font-bold tracking-wider text-white neon-text neon-violet">
               NEONEXUS
             </h1>
@@ -32,7 +34,6 @@ const NavBar = () => {
             <a href="#about" className="text-gray-300 hover:text-neon-violet transition duration-300">About</a>
             <a href="#tracks" className="text-gray-300 hover:text-neon-violet transition duration-300">Tracks</a>
             <a href="#schedule" className="text-gray-300 hover:text-neon-violet transition duration-300">Schedule</a>
-            <a href="#speakers" className="text-gray-300 hover:text-neon-violet transition duration-300">Speakers</a>
             <a href="#faq" className="text-gray-300 hover:text-neon-violet transition duration-300">FAQ</a>
             <button className="neon-button opacity-80 cursor-not-allowed">Opening Soon</button>
           </div>
@@ -54,7 +55,6 @@ const NavBar = () => {
             <a href="#about" onClick={closeMenu} className="block text-gray-300 hover:text-neon-violet transition duration-300 py-2">About</a>
             <a href="#tracks" onClick={closeMenu} className="block text-gray-300 hover:text-neon-violet transition duration-300 py-2">Tracks</a>
             <a href="#schedule" onClick={closeMenu} className="block text-gray-300 hover:text-neon-violet transition duration-300 py-2">Schedule</a>
-            <a href="#speakers" onClick={closeMenu} className="block text-gray-300 hover:text-neon-violet transition duration-300 py-2">Speakers</a>
             <a href="#faq" onClick={closeMenu} className="block text-gray-300 hover:text-neon-violet transition duration-300 py-2">FAQ</a>
             <button className="block w-full neon-button text-center mt-6 opacity-80 cursor-not-allowed">Opening Soon</button>
           </div>
