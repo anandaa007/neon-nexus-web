@@ -3,6 +3,10 @@ import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection';
 import TracksSection from '@/components/TracksSection';
+import FacilitiesSection from '@/components/FacilitiesSection';
+import ChiefGuestsSection from '@/components/ChiefGuestsSection';
+import PrizePoolSection from '@/components/PrizePoolSection';
+import BrochureSection from '@/components/BrochureSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
@@ -74,6 +78,10 @@ const Index = () => {
       </section>
       
       <TracksSection />
+      <FacilitiesSection />
+      <ChiefGuestsSection />
+      <PrizePoolSection />
+      <BrochureSection />
       <ScheduleSection />
       <FaqSection />
       <Footer />
