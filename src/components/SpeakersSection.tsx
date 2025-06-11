@@ -26,7 +26,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
   socials 
 }) => {
   return (
-    <div className={`glass-panel rounded-lg overflow-hidden group transition-all duration-300 hover:transform hover:scale-105 ${color}`}>
+    <div className={`glass-panel rounded-lg overflow-hidden group transition-all duration-300 hover:transform hover:scale-105 border ${color}`}>
       <div className="relative overflow-hidden h-60">
         <img
           src={image}
@@ -35,14 +35,14 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-cyber-darker to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full p-4">
-          <h3 className="text-xl font-orbitron font-bold group-hover:neon-text">{name}</h3>
+          <h3 className="text-xl font-orbitron font-bold group-hover:neon-text text-white">{name}</h3>
           <p className="text-gray-300 text-sm">{title}</p>
           <p className="text-sm font-semibold text-gray-400">{company}</p>
         </div>
       </div>
       
       <div className="p-6">
-        <p className="text-gray-400 mb-4 text-sm">{bio}</p>
+        <p className="text-gray-400 mb-4 text-sm leading-relaxed">{bio}</p>
         
         <div className="flex space-x-3">
           {socials.twitter && (
@@ -71,49 +71,49 @@ const speakersData = [
     name: "Dr. Sophia Chen",
     title: "Chief AI Scientist",
     company: "QuantumMinds Inc.",
-    bio: "Pioneering researcher in quantum machine learning with over 15 years of experience pushing the boundaries of AI technology.",
-    image: "https://source.unsplash.com/random/600x800/?scientist,woman",
-    color: "border-neon-violet neon-violet",
+    bio: "Pioneering researcher in quantum machine learning with over 15 years of experience pushing the boundaries of AI technology and neural networks.",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=800&fit=crop&crop=face",
+    color: "border-neon-violet border-opacity-30 hover:border-opacity-60",
     socials: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#"
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+      github: "https://github.com"
     }
   },
   {
     name: "Marcus Weller",
     title: "VR/AR Innovation Lead",
     company: "Neuralink Technologies",
-    bio: "Award-winning XR developer creating immersive experiences that blend physical and digital realities for medical applications.",
-    image: "https://source.unsplash.com/random/600x800/?developer,man",
-    color: "border-neon-blue neon-blue",
+    bio: "Award-winning XR developer creating immersive experiences that blend physical and digital realities for medical and educational applications.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=800&fit=crop&crop=face",
+    color: "border-neon-blue border-opacity-30 hover:border-opacity-60",
     socials: {
-      twitter: "#",
-      linkedin: "#"
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com"
     }
   },
   {
     name: "Zara Rodriguez",
     title: "Blockchain Architect",
     company: "CryptoSphere",
-    bio: "Visionary blockchain engineer who has designed decentralized systems for some of the world's largest financial institutions.",
-    image: "https://source.unsplash.com/random/600x800/?engineer,woman",
-    color: "border-neon-pink neon-pink",
+    bio: "Visionary blockchain engineer who has designed decentralized systems for some of the world's largest financial institutions and DeFi platforms.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=800&fit=crop&crop=face",
+    color: "border-neon-pink border-opacity-30 hover:border-opacity-60",
     socials: {
-      linkedin: "#",
-      github: "#"
+      linkedin: "https://linkedin.com",
+      github: "https://github.com"
     }
   },
   {
     name: "Dr. Hiroshi Nakamura",
     title: "Quantum Computing Director",
     company: "FutureTech Labs",
-    bio: "Leading researcher in quantum computing algorithms with a focus on cryptographic applications and security protocols.",
-    image: "https://source.unsplash.com/random/600x800/?professor,asian",
-    color: "border-neon-cyan neon-cyan",
+    bio: "Leading researcher in quantum computing algorithms with a focus on cryptographic applications and next-generation security protocols.",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=800&fit=crop&crop=face",
+    color: "border-neon-cyan border-opacity-30 hover:border-opacity-60",
     socials: {
-      twitter: "#",
-      github: "#"
+      twitter: "https://twitter.com",
+      github: "https://github.com"
     }
   }
 ];

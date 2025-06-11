@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import TracksSection from '@/components/TracksSection';
 import FacilitiesSection from '@/components/FacilitiesSection';
 import ChiefGuestsSection from '@/components/ChiefGuestsSection';
+import SpeakersSection from '@/components/SpeakersSection';
 import PrizePoolSection from '@/components/PrizePoolSection';
 import BrochureSection from '@/components/BrochureSection';
 import ScheduleSection from '@/components/ScheduleSection';
@@ -80,6 +81,7 @@ const Index = () => {
       <TracksSection />
       <FacilitiesSection />
       <ChiefGuestsSection />
+      <SpeakersSection />
       <PrizePoolSection />
       <BrochureSection />
       <ScheduleSection />
