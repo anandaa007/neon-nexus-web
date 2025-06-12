@@ -11,6 +11,7 @@ import BrochureSection from '@/components/BrochureSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
+import Sponsors from '@/components/Sponsors';
 
 const Index = () => {
   // Smooth scroll behavior
@@ -104,6 +105,7 @@ const Index = () => {
       <ScheduleSection />
       <FaqSection />
       <Footer />
+      <Sponsors />
     </div>
   );
 };
