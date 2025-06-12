@@ -5,19 +5,16 @@ import HeroSection from '@/components/HeroSection';
 import TracksSection from '@/components/TracksSection';
 import FacilitiesSection from '@/components/FacilitiesSection';
 import ChiefGuestsSection from '@/components/ChiefGuestsSection';
+import SpeakersSection from '@/components/SpeakersSection';
 import PrizePoolSection from '@/components/PrizePoolSection';
 import BrochureSection from '@/components/BrochureSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
-import Sponsors from '@/components/Sponsors';
 
 const Index = () => {
-  console.log('Index component is rendering');
-
   // Smooth scroll behavior
   useEffect(() => {
-    console.log('Index useEffect running');
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
@@ -39,22 +36,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-cyber-dark text-white overflow-x-hidden">
-      {/* Floating Corner Logos */}
-      <div className="fixed top-4 left-4 z-[1000]">
-        <img
-          src={`${import.meta.env.BASE_URL}bitm.png`}
-          alt="BITM Logo"
-          className="h-14 w-auto"
-        />
-      </div>
-      <div className="fixed top-4 right-4 z-[1000]">
-        <img
-          src={`${import.meta.env.BASE_URL}ieee.png`}
-          alt="IEEE Logo"
-          className="h-14 w-auto"
-        />
-      </div>
-
       <NavBar />
       <HeroSection />
       
@@ -100,11 +81,11 @@ const Index = () => {
       <TracksSection />
       <FacilitiesSection />
       <ChiefGuestsSection />
+      <SpeakersSection />
       <PrizePoolSection />
       <BrochureSection />
       <ScheduleSection />
       <FaqSection />
-      <Sponsors />
       <Footer />
     </div>
   );
