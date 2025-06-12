@@ -39,18 +39,19 @@ const Index = () => {
       {/* Floating Corner Logos */}
       <div className="fixed top-4 left-4 z-[1000]">
         <img
-          src="/bitm.png" // replace with your BITM logo path
+          src={`${import.meta.env.BASE_URL}bitm-removebg.png`}
           alt="BITM Logo"
           className="h-14 w-auto"
         />
       </div>
       <div className="fixed top-4 right-4 z-[1000]">
         <img
-          src="/ieee.png" // replace with your IEEE logo path
+          src={`${import.meta.env.BASE_URL}ieee-removebg.png`}
           alt="IEEE Logo"
           className="h-14 w-auto"
         />
       </div>
+
 
       <NavBar />
       <HeroSection />

@@ -19,7 +19,7 @@ const HeroSection = () => {
   const liveUpdates = [
     "REGISTRATION OPENING SOON! STAY TUNED FOR UPDATES",
     "NEONEXUS HACKATHON • SEPTEMBER 6-7, 2025 • 36 HOURS OF CODING",
-    "NATIONAL LEVEL EVENT • $50,000+ IN PRIZES • SEPARATE AWARDS FOR HARDWARE & SOFTWARE",
+    "NATIONAL LEVEL EVENT • $1,00,000+ IN PRIZES • SEPARATE AWARDS FOR HARDWARE & SOFTWARE",
     "BRINGING TOGETHER THE BEST INNOVATORS FROM ACROSS THE COUNTRY"
   ];
 
@@ -68,7 +68,7 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
             <img 
-              src="/lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png" 
+              src={`${import.meta.env.BASE_URL}lovable-uploads/94236d43-1ed1-4b71-a66c-0517b0678074.png`} 
               alt="NeoNexus Logo" 
               className="h-28 w-auto" // Increased from h-20 to h-28
             />
