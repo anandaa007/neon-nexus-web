@@ -5,12 +5,12 @@ const Sponsors = () => {
   const base = import.meta.env.BASE_URL;
 
   const sponsorLogos = [
-    "mathworks-removebg.png",
-    "sight-removebg.png",
-    "labteach-removebg.png",
-    "sustaina-removebg.png",
-    "CoreEL-removebg.png",
-    "amda-removebg.png",
+    "mathworks.jpg",
+    "sight.png",
+    "labteach.jpg",
+    "sustaina.jpg",
+    "CoreEL.jpg",
+    "amda.png",
   ];
 
   return (
@@ -19,7 +19,7 @@ const Sponsors = () => {
 
       <div className="main-logos-with-text">
         <img
-          src={`${base}bitm-removebg.png`}
+          src={`${base}bitm.png`}
           alt="BITM Logo"
           className="main-logo"
         />
@@ -32,7 +32,7 @@ const Sponsors = () => {
         </div>
 
         <img
-          src={`${base}ieee-removebg.png`}
+          src={`${base}ieee.png`}
           alt="IEEE Logo"
           className="main-logo"
         />

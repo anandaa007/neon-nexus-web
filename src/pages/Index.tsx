@@ -39,14 +39,14 @@ const Index = () => {
       {/* Floating Corner Logos */}
       <div className="fixed top-4 left-4 z-[1000]">
         <img
-          src={`${import.meta.env.BASE_URL}bitm-removebg.png`}
+          src={`${import.meta.env.BASE_URL}bitm.png`}
           alt="BITM Logo"
           className="h-14 w-auto"
         />
       </div>
       <div className="fixed top-4 right-4 z-[1000]">
         <img
-          src={`${import.meta.env.BASE_URL}ieee-removebg.png`}
+          src={`${import.meta.env.BASE_URL}ieee.png`}
           alt="IEEE Logo"
           className="h-14 w-auto"
         />
