@@ -1,0 +1,48 @@
+.sponsor-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-logos-with-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.main-logo {
+  height: 100px;
+  object-fit: contain;
+}
+
+.logo-text {
+  max-width: 300px;
+  text-align: center;
+}
+
+.college-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.branch-name {
+  font-size: 1rem;
+  margin: 0.25rem 0 0;
+  color: #555;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sponsor-logo {
+  height: 80px;
+  object-fit: contain;
+}

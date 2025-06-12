@@ -116,7 +116,7 @@ const Footer = () => {
             © {new Date().getFullYear()} NeoNexus Hackathon. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm text-center">
-            Designed and developed by A Ananda Dept. of EEE and Aaftabzohara Dept. of AIML
+            Designed and developed by A Ananda Dept. of EEE and Aaftab Zohra Dept. of AIML
           </p>
         </div>
       </div>

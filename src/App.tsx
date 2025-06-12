@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import Sponsors from "./components/Sponsors";
+
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+
+      {/* Add Sponsors Component here for logos */}
+      <Sponsors />
     </TooltipProvider>
   </QueryClientProvider>
 );
