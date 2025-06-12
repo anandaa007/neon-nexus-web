@@ -3,8 +3,11 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
+// Replace with your repo name (important!)
+
+
 export default defineConfig(({ mode }) => ({
-  base: "/", // ✅ set to root for Vercel
+  base: "/neon-nexus-web/", // <--- ADD THIS LINE
   server: {
     host: "::",
     port: 8080,
@@ -19,3 +22,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
