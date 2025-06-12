@@ -13,8 +13,11 @@ import Footer from '@/components/Footer';
 import Sponsors from '@/components/Sponsors';
 
 const Index = () => {
+  console.log('Index component is rendering');
+
   // Smooth scroll behavior
   useEffect(() => {
+    console.log('Index useEffect running');
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
